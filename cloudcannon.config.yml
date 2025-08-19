@@ -1,0 +1,42 @@
+_schema: _schema
+paths:
+  uploads: uploads
+  static: ''
+collections_config:
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  investor_materials:
+    path: investor_materials
+    name: Investor Materials
+    icon: star_rate_half
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  landing_pages:
+    path: landing_pages
+    name: Landing Pages
+    icon: find_in_page
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  project_management:
+    path: project_management
+    name: Project Management
+    icon: stress_management
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+timezone: America/New_York
+markdown:
+  engine: commonmark
+  options:
+    html: true
