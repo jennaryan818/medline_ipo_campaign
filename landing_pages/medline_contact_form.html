@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medline Industries Pre-IPO Investment - Investor Qualification</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+        }
+        .gold-accent {
+            color: #d4af37;
+        }
+        .gold-bg {
+            background-color: #d4af37;
+        }
+        .form-section {
+            transition: all 0.3s ease;
+        }
+        .form-section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .required-field::after {
+            content: "*";
+            color: #ef4444;
+            margin-left: 2px;
+        }
+         {
+            body { font-size: 12px; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <div class="gradient-bg text-white py-8">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-2">
+                    <i class="fas fa-chart-line gold-accent mr-3"></i>
+                    Medline Industries Pre-IPO Investment
+                </h1>
+                <p class="text-xl opacity-90">Exclusive Investment Opportunity - Investor Qualification Form</p>
+                <div class="flex justify-center items-center mt-4 space-x-8 text-sm">
+                    <div class="flex items-center">
+                        <i class="fas fa-dollar-sign gold-accent mr-2"></i>
+                        <span>$23.2B Annual Revenue</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-trophy gold-accent mr-2"></i>
+                        <span>50 Years Consecutive Growth</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-target gold-accent mr-2"></i>
+                        <span>$50B IPO Target</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Form Container -->
+    <div class="max-w-4xl mx-auto px-6 py-8">
+        
+        <!-- Investment Opportunity Overview -->
+        <div class="bg-white rounded-lg shadow-lg mb-8 p-8 form-section">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-building text-blue-900 mr-3"></i>
+                Investment Opportunity Overview
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-3">Company Highlights</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Leading medical distribution company</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Vertically integrated business model</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 33 manufacturing facilities globally</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 190,000+ product SKUs</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 5.8% EBITDA margin (vs industry 1.6-2.0%)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-3">Investment Terms</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-coins gold-accent mr-2"></i> Minimum Investment: $1M - $5M</li>
+                        <li class="flex items-center"><i class="fas fa-calendar gold-accent mr-2"></i> Expected IPO Timeline: 2025</li>
+                        <li class="flex items-center"><i class="fas fa-percentage gold-accent mr-2"></i> Target IPO Valuation: $50B</li>
+                        <li class="flex items-center"><i class="fas fa-users gold-accent mr-2"></i> Limited to Accredited Investors</li>
+                        <li class="flex items-center"><i class="fas fa-shield-alt gold-accent mr-2"></i> SEC Compliant Offering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Investor Qualification Form -->
+        <form id="investorForm" class="space-y-8">
+            
+            <!-- Personal Information -->
+            <div class="bg-white rounded-lg shadow-lg p-8 form-section">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-user text-blue-900 mr-3"></i>
+                    Personal Information
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 required-field">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 required-field">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 required-field">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 required-field">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Job Title</label>
+                        <input type="text" id="jobTitle" name="jobTitle" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Company/Organization</label>
+                        <input type="text" id="company" name="company" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accredited Investor Verification -->
+            <div class="bg-white rounded-lg shadow-lg p-8 form-section">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-certificate text-blue-900 mr-3"></i>
+                    Accredited Investor Verification
+                </h2>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                    <p class="text-sm text-yellow-800">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        According to SEC regulations, this investment opportunity is limited to accredited investors only. Please confirm your qualification below.
+                    </p>
+                </div>
+                
+                <p class="text-sm text-gray-600 mb-4 font-medium">I qualify as an accredited investor under SEC Rule 501 because (check all that apply):</p>
+                
+                <div class="space-y-4">
+                    <label class="flex items-start">
+                        <input type="checkbox" name="accreditation" value="income" class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>Individual Income:</strong> I have earned individual income exceeding $200,000 in each of the two most recent years (or joint income with spouse exceeding $300,000) and reasonably expect to reach the same income level in the current year.
+                        </span>
+                    </label>
+                    
+                    <label class="flex items-start">
+                        <input type="checkbox" name="accreditation" value="networth" class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>Net Worth:</strong> I have a net worth exceeding $1,000,000 (excluding the value of my primary residence).
+                        </span>
+                    </label>
+                    
+                    <label class="flex items-start">
+                        <input type="checkbox" name="accreditation" value="entity" class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>Entity:</strong> I represent an entity with assets exceeding $5,000,000, or an entity in which all equity owners are accredited investors.
+                        </span>
+                    </label>
+                    
+                    <label class="flex items-start">
+                        <input type="checkbox" name="accreditation" value="professional" class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>Investment Professional:</strong> I hold in good standing a Series 7, 65, or 82 license, or I am a "knowledgeable employee" of a private fund.
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Investment Capacity Assessment -->
+            <div class="bg-white rounded-lg shadow-lg p-8 form-section">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-calculator text-blue-900 mr-3"></i>
+                    Investment Capacity Assessment
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2 required-field">Intended Investment Amount</label>
+                        <select id="investmentAmount" name="investmentAmount" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Select Investment Range</option>
+                            <option value="1-5M">$1M - $5M</option>
+                            <option value="5-10M">$5M - $10M</option>
+                            <option value="10-25M">$10M - $25M</option>
+                            <option value="25-50M">$25M - $50M</option>
+                            <option value="50M+">$50M+</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Investment Timeline</label>
+                        <select id="timeline" name="timeline" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Select Timeline</option>
+                            <option value="immediate">Ready to invest immediately</option>
+                            <option value="30days">Within 30 days</option>
+                            <option value="60days">Within 60 days</option>
+                            <option value="90days">Within 90 days</option>
+                            <option value="research">Still researching</option>
+                        </select>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Investment Experience</label>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="experience" value="stocks" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Public Equity Markets</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="experience" value="private" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Private Equity/VC</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="experience" value="realestate" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Real Estate</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="experience" value="hedge" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Hedge Funds</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="experience" value="preipo" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Pre-IPO Investments</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="experience" value="healthcare" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Healthcare Sector</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Objectives -->
+            <div class="bg-white rounded-lg shadow-lg p-8 form-section">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-bullseye text-blue-900 mr-3"></i>
+                    Investment Objectives & Preferences
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Primary Investment Objective</label>
+                        <select id="objective" name="objective" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Select Primary Objective</option>
+                            <option value="growth">Capital Growth</option>
+                            <option value="income">Income Generation</option>
+                            <option value="preservation">Capital Preservation</option>
+                            <option value="diversification">Portfolio Diversification</option>
+                            <option value="strategic">Strategic Investment</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Risk Tolerance</label>
+                        <div class="flex space-x-6">
+                            <label class="flex items-center">
+                                <input type="radio" name="riskTolerance" value="conservative" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Conservative</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="riskTolerance" value="moderate" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Moderate</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="riskTolerance" value="aggressive" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Aggressive</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Communication Method</label>
+                        <div class="flex space-x-6">
+                            <label class="flex items-center">
+                                <input type="radio" name="communication" value="email" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Email</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="communication" value="phone" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">Phone</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="communication" value="meeting" class="mr-2 text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm text-gray-700">In-Person Meeting</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="bg-white rounded-lg shadow-lg p-8 form-section">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-clipboard-list text-blue-900 mr-3"></i>
+                    Additional Information
+                </h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">How did you learn about this opportunity?</label>
+                        <select id="source" name="source" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="">Select Source</option>
+                            <option value="linkedin">LinkedIn Advertisement</option>
+                            <option value="google">Google Search/Advertisement</option>
+                            <option value="referral">Professional Referral</option>
+                            <option value="newsletter">Investment Newsletter</option>
+                            <option value="conference">Industry Conference</option>
+                            <option value="website">Company Website</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Specific Questions or Comments</label>
+                        <textarea id="questions" name="questions" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Please share any specific questions about the investment opportunity..."></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="flex items-start">
+                            <input type="checkbox" name="updates" value="yes" checked class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                            <span class="text-sm text-gray-700">I would like to receive updates about this investment opportunity and related healthcare sector investments.</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Disclaimers and Compliance -->
+            <div class="bg-gray-100 rounded-lg p-8 form-section">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-shield-alt text-red-600 mr-3"></i>
+                    Legal Disclaimers and Compliance
+                </h2>
+                
+                <div class="space-y-4 text-sm text-gray-600">
+                    <div class="bg-white p-4 rounded border-l-4 border-red-500">
+                        <h3 class="font-semibold text-gray-800 mb-2">IMPORTANT RISK DISCLOSURE</h3>
+                        <p>This investment involves substantial risk and is suitable only for sophisticated investors who can afford to lose their entire investment. Past performance does not guarantee future results. All projections and estimates are forward-looking statements that involve risks and uncertainties.</p>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded border-l-4 border-blue-500">
+                        <h3 class="font-semibold text-gray-800 mb-2">SEC COMPLIANCE NOTICE</h3>
+                        <p>This offering has not been registered under the Securities Act of 1933 and is being offered in reliance on exemptions from registration. This opportunity is limited to accredited investors as defined in Rule 501 of Regulation D.</p>
+                    </div>
+                    
+                    <div class="bg-white p-4 rounded border-l-4 border-yellow-500">
+                        <h3 class="font-semibold text-gray-800 mb-2">CONFIDENTIALITY</h3>
+                        <p>All information provided is confidential and proprietary. By submitting this form, you agree to maintain the confidentiality of all information received regarding this investment opportunity.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 space-y-4">
+                    <label class="flex items-start">
+                        <input type="checkbox" name="acknowledgments" value="accredited" required class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>I acknowledge</strong> that I qualify as an accredited investor under SEC regulations and understand the risks associated with private investments.
+                        </span>
+                    </label>
+                    
+                    <label class="flex items-start">
+                        <input type="checkbox" name="acknowledgments" value="risks" required class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>I acknowledge</strong> that I have read and understand the risk disclosures and that this investment may result in partial or total loss of capital.
+                        </span>
+                    </label>
+                    
+                    <label class="flex items-start">
+                        <input type="checkbox" name="acknowledgments" value="confidentiality" required class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>I agree</strong> to maintain the confidentiality of all information received regarding this investment opportunity.
+                        </span>
+                    </label>
+                    
+                    <label class="flex items-start">
+                        <input type="checkbox" name="acknowledgments" value="accuracy" required class="mt-1 mr-3 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">
+                            <strong>I certify</strong> that all information provided in this form is true and accurate to the best of my knowledge.
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Section -->
+            <div class="bg-white rounded-lg shadow-lg p-8 form-section">
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Submit Your Qualification</h3>
+                    <p class="text-gray-600 mb-6">A member of our investor relations team will contact you within 24 hours to discuss this exclusive opportunity.</p>
+                    
+                    <button type="submit" class="gold-bg hover:bg-yellow-600 text-white font-bold py-4 px-12 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Submit Qualification Form
+                    </button>
+                    
+                    <div class="mt-6 flex justify-center items-center space-x-8 text-sm text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fas fa-lock mr-2"></i>
+                            <span>Secure & Encrypted</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            <span>SEC Compliant</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>24hr Response</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="successMessage" class="hidden bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg mt-8">
+            <div class="flex items-center">
+                <i class="fas fa-check-circle mr-3"></i>
+                <div>
+                    <h3 class="font-bold">Thank you for your interest!</h3>
+                    <p>Your qualification form has been submitted successfully. A member of our investor relations team will contact you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 gold-accent">Contact Information</h4>
+                    <div class="space-y-2 text-sm">
+                        <p><i class="fas fa-envelope mr-2"></i> investors@medline-ipo.com</p>
+                        <p><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> New York, NY</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 gold-accent">Resources</h4>
+                    <div class="space-y-2 text-sm">
+                        <p><i class="fas fa-file-pdf mr-2"></i> Investment Prospectus</p>
+                        <p><i class="fas fa-chart-bar mr-2"></i> Financial Reports</p>
+                        <p><i class="fas fa-calendar mr-2"></i> Investor Calendar</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 gold-accent">Compliance</h4>
+                    <div class="space-y-2 text-sm">
+                        <p><i class="fas fa-balance-scale mr-2"></i> SEC Registered</p>
+                        <p><i class="fas fa-certificate mr-2"></i> FINRA Member</p>
+                        <p><i class="fas fa-shield-alt mr-2"></i> SIPC Protected</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Medline Industries Pre-IPO Investment. All rights reserved. Securities offered through registered representatives.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form validation and submission handling
+        document.getElementById('investorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('border-red-500');
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+            
+            // Check accreditation
+            const accreditationChecked = this.querySelectorAll('input[name="accreditation"]:checked');
+            if (accreditationChecked.length === 0) {
+                isValid = false;
+                alert('Please confirm your accredited investor status.');
+                return;
+            }
+            
+            // Check required acknowledgments
+            const requiredAcknowledgments = this.querySelectorAll('input[name="acknowledgments"][required]');
+            let acknowledgementsValid = true;
+            requiredAcknowledgments.forEach(checkbox => {
+                if (!checkbox.checked) {
+                    acknowledgementsValid = false;
+                }
+            });
+            
+            if (!acknowledgementsValid) {
+                alert('Please read and acknowledge all required compliance statements.');
+                return;
+            }
+            
+            if (isValid) {
+                // Simulate form submission
+                this.style.display = 'none';
+                document.getElementById('successMessage').classList.remove('hidden');
+                
+                // Scroll to success message
+                document.getElementById('successMessage').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+                
+                // In real implementation, you would submit to your backend here
+                console.log('Form submitted successfully');
+                
+                // Collect form data for backend submission
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData.entries());
+                console.log('Form data:', data);
+            } else {
+                alert('Please complete all required fields.');
+            }
+        });
+        
+        // Dynamic form enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling for form sections
+            const formSections = document.querySelectorAll('.form-section');
+            
+            // Investment amount change handler
+            document.getElementById('investmentAmount').addEventListener('change', function() {
+                const amount = this.value;
+                if (amount) {
+                    console.log(`Investment amount selected: ${amount}`);
+                    // You could show additional fields or information based on investment amount
+                }
+            });
+            
+            // Add form progress indicator
+            let completedSections = 0;
+            const totalSections = 6; // Number of main form sections
+            
+            function updateProgress() {
+                const progress = (completedSections / totalSections) * 100;
+                console.log(`Form progress: ${progress}%`);
+            }
+            
+            // Monitor form completion
+            const inputs = document.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('change', updateProgress);
+            });
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDid6xFsHacwbEVBFfupuKA0JOk%2BWsE2ge9lRI8u1FB7rGOsmsltyUKaeaXTKRfFKHBu6uZNKgnEsY6XEEcdV58Eltyi9%2FLqWlEGi05KmoR%2BEAWTictR7KK9FPBHvOBcoL2%2BulA%2BJMJR2RDOzzlB1RRg85qQGLVommjndkmgpq3BohMcy8m4mhvIouCcslR%2BNBdSNrom3ByVUcBgpJ8%2Fsrjm%2FnL0HP6veoJvcLVD2Vir6BTex1GKHeJQF0aGFXbcaKylFbe4U7jwkR7pmpSoL%2FmHS6Yh01RJHcNP%2Bpq%2B5pT%2Fr4k6McupCGi3C%2BBXt%2FOXAXlTFdlGJ%2FjRYq2VaoqnNI6YA9RP%2BtWcrOpyj7OCxZU31myhQNafBrbSLEBYSDjYWip7rU6dNciPZLViKMaUvdtj7K%2F8mpEnCrgcwaklDchIvjEYtIq74lm%2B%2BkOammpgaef%2FYmPAbK9ODqKmpcNO0GZ0qpzt11VQtMmNv8%2BIkUOAW4iZghJUWj7CbbjYBq7cLlAA5ZjihA9Obsb4mFpaWeFAaVupLR4NTHtDZdBrgYOrN1SZ%2F5yjKWW7VBnLZEvbhVf8UhqG%2BY%2F9xoEshsOUAqGiA%2F0W5Xr6OvTE5iZ4uB1kG";
+        window.__genspark_locale = "zh-CN";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDid6xFsHacwbEVBFfupuKA0JOk+WsE2ge9lRI8u1FB7rGOsmsltyUKaeaXTKRfFKHBu6uZNKgnEsY6XEEcdV58Eltyi9/LqWlEGi05KmoR+EAWTictR7KK9FPBHvOBcoL2+ulA+JMJR2RDOzzlB1RRg85qQGLVommjndkmgpq3BohMcy8m4mhvIouCcslR+NBdSNrom3ByVUcBgpJ8/srjm/nL0HP6veoJvcLVD2Vir6BTex1GKHeJQF0aGFXbcaKylFbe4U7jwkR7pmpSoL/mHS6Yh01RJHcNP+pq+5pT/r4k6McupCGi3C+BXt/OXAXlTFdlGJ/jRYq2VaoqnNI6YA9RP+tWcrOpyj7OCxZU31myhQNafBrbSLEBYSDjYWip7rU6dNciPZLViKMaUvdtj7K/8mpEnCrgcwaklDchIvjEYtIq74lm++kOammpgaef/YmPAbK9ODqKmpcNO0GZ0qpzt11VQtMmNv8+IkUOAW4iZghJUWj7CbbjYBq7cLlAA5ZjihA9Obsb4mFpaWeFAaVupLR4NTHtDZdBrgYOrN1SZ/5yjKWW7VBnLZEvbhVf8UhqG+Y/9xoEshsOUAqGiA/0W5Xr6OvTE5iZ4uB1kG";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    

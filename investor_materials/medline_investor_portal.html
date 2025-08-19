@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medline Industries Pre-IPO Investor Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .gold-accent {
+            color: #fbbf24;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, #1e3a8a, #fbbf24, #1e3a8a);
+        }
+        .chart-container {
+            height: 400px;
+        }
+        .language-toggle {
+            transition: all 0.3s ease;
+        }
+        .hidden-lang {
+            display: none;
+        }
+         {
+            body { font-size: 12px; }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-6 px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-hospital text-3xl gold-accent"></i>
+                    <div>
+                        <h1 class="text-3xl font-bold">Medline Industries</h1>
+                        <p class="text-lg opacity-90">Pre-IPO Investment Opportunity</p>
+                    </div>
+                </div>
+                <div class="language-toggle no-print">
+                    <button onclick="toggleLanguage()" class="bg-yellow-500 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                        <i class="fas fa-globe mr-2"></i>
+                        <span id="lang-button">中文</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Key Metrics Banner -->
+            <div class="grid grid-cols-4 gap-4 text-center">
+                <div class="bg-blue-800 bg-opacity-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold gold-accent">$23.2B</div>
+                    <div class="text-sm en-content">Annual Revenue</div>
+                    <div class="text-sm cn-content hidden-lang">年收入</div>
+                </div>
+                <div class="bg-blue-800 bg-opacity-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold gold-accent">50</div>
+                    <div class="text-sm en-content">Years Growth</div>
+                    <div class="text-sm cn-content hidden-lang">年连续增长</div>
+                </div>
+                <div class="bg-blue-800 bg-opacity-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold gold-accent">5.8%</div>
+                    <div class="text-sm en-content">EBITDA Margin</div>
+                    <div class="text-sm cn-content hidden-lang">EBITDA利润率</div>
+                </div>
+                <div class="bg-blue-800 bg-opacity-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold gold-accent">$50B</div>
+                    <div class="text-sm en-content">IPO Target</div>
+                    <div class="text-sm cn-content hidden-lang">IPO目标估值</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 no-print">
+        <div class="container mx-auto px-4">
+            <ul class="flex space-x-8 py-4 text-sm font-semibold">
+                <li><a href="#overview" class="text-blue-800 hover:text-yellow-600 transition-colors">
+                    <span class="en-content">Overview</span>
+                    <span class="cn-content hidden-lang">概览</span>
+                </a></li>
+                <li><a href="#investment" class="text-blue-800 hover:text-yellow-600 transition-colors">
+                    <span class="en-content">Investment</span>
+                    <span class="cn-content hidden-lang">投资亮点</span>
+                </a></li>
+                <li><a href="#financials" class="text-blue-800 hover:text-yellow-600 transition-colors">
+                    <span class="en-content">Financials</span>
+                    <span class="cn-content hidden-lang">财务数据</span>
+                </a></li>
+                <li><a href="#market" class="text-blue-800 hover:text-yellow-600 transition-colors">
+                    <span class="en-content">Market</span>
+                    <span class="cn-content hidden-lang">市场分析</span>
+                </a></li>
+                <li><a href="#risk" class="text-blue-800 hover:text-yellow-600 transition-colors">
+                    <span class="en-content">Risk</span>
+                    <span class="cn-content hidden-lang">风险披露</span>
+                </a></li>
+                <li><a href="#contact" class="text-blue-800 hover:text-yellow-600 transition-colors">
+                    <span class="en-content">Contact</span>
+                    <span class="cn-content hidden-lang">联系我们</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Company Overview Section -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">
+                    <span class="en-content">Company Overview</span>
+                    <span class="cn-content hidden-lang">公司概览</span>
+                </h2>
+                <div class="section-divider w-32 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-6">
+                        <span class="en-content">Leading Healthcare Distribution Company</span>
+                        <span class="cn-content hidden-lang">领先的医疗分销公司</span>
+                    </h3>
+                    
+                    <div class="en-content">
+                        <p class="text-lg mb-6 leading-relaxed">
+                            Medline Industries is one of the largest privately held manufacturers and distributors of medical supplies in the United States. Founded in 1966, the company has achieved an unprecedented 50 consecutive years of growth, reaching $23.2 billion in annual revenue.
+                        </p>
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>33 manufacturing facilities worldwide</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>190,000+ product SKUs</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>Vertically integrated business model</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>Industry-leading EBITDA margins</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cn-content hidden-lang">
+                        <p class="text-lg mb-6 leading-relaxed">
+                            Medline Industries是美国最大的私人医疗用品制造和分销商之一。公司成立于1966年，实现了史无前例的连续50年增长，年收入达到232亿美元。
+                        </p>
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>全球33个制造工厂</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>190,000+ 产品SKU</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>垂直整合商业模式</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-3"></i>行业领先的EBITDA利润率</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/9b8a4e10-eac5-4ac0-97a5-433dee1a40fa_wm" 
+                         alt="Medline Industries Infographic" 
+                         class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Highlights Section -->
+    <section id="investment" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">
+                    <span class="en-content">Investment Highlights</span>
+                    <span class="cn-content hidden-lang">投资亮点</span>
+                </h2>
+                <div class="section-divider w-32 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-industry text-2xl text-blue-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">
+                        <span class="en-content">Vertically Integrated Model</span>
+                        <span class="cn-content hidden-lang">垂直整合模式</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed en-content">
+                        Unlike pure distributors, Medline manufactures its own products, providing better margins and supply chain control.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed cn-content hidden-lang">
+                        与纯分销商不同，Medline自主制造产品，提供更好的利润率和供应链控制能力。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-2xl text-green-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">
+                        <span class="en-content">Consistent Growth</span>
+                        <span class="cn-content hidden-lang">持续增长</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed en-content">
+                        50 consecutive years of growth with industry-leading EBITDA margin of 5.8% vs industry average of 1.6-2.0%.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed cn-content hidden-lang">
+                        连续50年增长，EBITDA利润率5.8%，远超行业平均1.6-2.0%水平。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center transform hover:scale-105 transition-transform">
+                    <div class="bg-yellow-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">
+                        <span class="en-content">IPO Opportunity</span>
+                        <span class="cn-content hidden-lang">IPO机遇</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed en-content">
+                        Target IPO valuation of $50 billion with public offering planned for 2025, offering significant upside potential.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed cn-content hidden-lang">
+                        目标IPO估值500亿美元，计划2025年公开上市，具有巨大上升潜力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Performance Section -->
+    <section id="financials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">
+                    <span class="en-content">Financial Performance</span>
+                    <span class="cn-content hidden-lang">财务表现</span>
+                </h2>
+                <div class="section-divider w-32 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Revenue Chart -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-blue-800 mb-6 text-center">
+                        <span class="en-content">Revenue Growth (Billions USD)</span>
+                        <span class="cn-content hidden-lang">收入增长 (十亿美元)</span>
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Margin Comparison -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-blue-800 mb-6 text-center">
+                        <span class="en-content">EBITDA Margin Comparison</span>
+                        <span class="cn-content hidden-lang">EBITDA利润率对比</span>
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="marginChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Key Financial Metrics -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-800 mb-2">$23.2B</div>
+                    <div class="text-sm text-gray-600 en-content">Annual Revenue</div>
+                    <div class="text-sm text-gray-600 cn-content hidden-lang">年收入</div>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-lg">
+                    <div class="text-3xl font-bold text-green-800 mb-2">5.8%</div>
+                    <div class="text-sm text-gray-600 en-content">EBITDA Margin</div>
+                    <div class="text-sm text-gray-600 cn-content hidden-lang">EBITDA利润率</div>
+                </div>
+                <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                    <div class="text-3xl font-bold text-yellow-600 mb-2">33</div>
+                    <div class="text-sm text-gray-600 en-content">Manufacturing Facilities</div>
+                    <div class="text-sm text-gray-600 cn-content hidden-lang">制造工厂</div>
+                </div>
+                <div class="text-center p-6 bg-purple-50 rounded-lg">
+                    <div class="text-3xl font-bold text-purple-800 mb-2">190K+</div>
+                    <div class="text-sm text-gray-600 en-content">Product SKUs</div>
+                    <div class="text-sm text-gray-600 cn-content hidden-lang">产品SKU</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis Section -->
+    <section id="market" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">
+                    <span class="en-content">Market Analysis</span>
+                    <span class="cn-content hidden-lang">市场分析</span>
+                </h2>
+                <div class="section-divider w-32 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-800 mb-6">
+                        <span class="en-content">Global Medical Distribution Market</span>
+                        <span class="cn-content hidden-lang">全球医疗分销市场</span>
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="marketChart"></canvas>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <p class="text-sm text-gray-600 en-content">
+                            7.1% CAGR from 2023 to 2032
+                        </p>
+                        <p class="text-sm text-gray-600 cn-content hidden-lang">
+                            2023-2032年复合增长率7.1%
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h4 class="text-lg font-bold text-blue-800 mb-3">
+                            <span class="en-content">Market Drivers</span>
+                            <span class="cn-content hidden-lang">市场驱动因素</span>
+                        </h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                Aging global population increasing healthcare demand
+                            </li>
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                Rising chronic disease prevalence
+                            </li>
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                Healthcare infrastructure expansion in emerging markets
+                            </li>
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                Technological advancement in medical devices
+                            </li>
+                            
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                全球人口老龄化推动医疗需求增长
+                            </li>
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                慢性疾病患病率上升
+                            </li>
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                新兴市场医疗基础设施扩张
+                            </li>
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-arrow-right text-blue-600 mr-2 mt-1"></i>
+                                医疗设备技术进步
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg">
+                        <h4 class="text-lg font-bold text-blue-800 mb-3">
+                            <span class="en-content">Competitive Advantages</span>
+                            <span class="cn-content hidden-lang">竞争优势</span>
+                        </h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                Vertically integrated supply chain
+                            </li>
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                Private label product portfolio
+                            </li>
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                Strong customer relationships
+                            </li>
+                            <li class="flex items-start en-content">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                Operational efficiency and scale
+                            </li>
+                            
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                垂直整合供应链
+                            </li>
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                自有品牌产品组合
+                            </li>
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                强大的客户关系
+                            </li>
+                            <li class="flex items-start cn-content hidden-lang">
+                                <i class="fas fa-star text-yellow-500 mr-2 mt-1"></i>
+                                运营效率和规模优势
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Disclosure Section -->
+    <section id="risk" class="py-16 bg-red-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-red-800 mb-4">
+                    <span class="en-content">Risk Disclosure</span>
+                    <span class="cn-content hidden-lang">风险披露</span>
+                </h2>
+                <div class="w-32 h-0.5 bg-red-600 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-red-800 mb-4 flex items-center">
+                        <i class="fas fa-exclamation-triangle mr-3"></i>
+                        <span class="en-content">Important Investment Risks</span>
+                        <span class="cn-content hidden-lang">重要投资风险</span>
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 en-content">Market Risks</h4>
+                            <h4 class="font-bold text-gray-800 mb-3 cn-content hidden-lang">市场风险</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Healthcare industry regulatory changes
+                                </li>
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Economic downturn affecting healthcare spending
+                                </li>
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Increased competition from new entrants
+                                </li>
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Supply chain disruption risks
+                                </li>
+                                
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    医疗行业监管政策变化
+                                </li>
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    经济衰退影响医疗支出
+                                </li>
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    新进入者加剧竞争
+                                </li>
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    供应链中断风险
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3 en-content">Investment Risks</h4>
+                            <h4 class="font-bold text-gray-800 mb-3 cn-content hidden-lang">投资风险</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Pre-IPO investment illiquidity
+                                </li>
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    IPO timing and valuation uncertainty
+                                </li>
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Potential loss of entire investment
+                                </li>
+                                <li class="flex items-start en-content">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Limited voting rights and control
+                                </li>
+                                
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    Pre-IPO投资流动性差
+                                </li>
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    IPO时间和估值不确定性
+                                </li>
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    可能损失全部投资
+                                </li>
+                                <li class="flex items-start cn-content hidden-lang">
+                                    <i class="fas fa-circle text-red-500 text-xs mr-2 mt-2"></i>
+                                    有限的投票权和控制权
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-red-100 p-6 rounded-lg">
+                    <p class="text-red-800 font-semibold mb-2 en-content">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        Legal Disclaimer
+                    </p>
+                    <p class="text-red-800 font-semibold mb-2 cn-content hidden-lang">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        法律免责声明
+                    </p>
+                    <p class="text-sm text-red-700 leading-relaxed en-content">
+                        This investment opportunity is only available to accredited investors as defined by applicable securities laws. Past performance does not guarantee future results. All investments involve risk of loss, including the potential loss of principal. Please consult with your financial advisor before making any investment decision.
+                    </p>
+                    <p class="text-sm text-red-700 leading-relaxed cn-content hidden-lang">
+                        此投资机会仅向适用证券法定义的合格投资者开放。过往表现不代表未来业绩。所有投资都存在损失风险，包括本金损失的可能。在做出任何投资决定之前，请咨询您的财务顾问。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">
+                    <span class="en-content">Contact Our Investment Team</span>
+                    <span class="cn-content hidden-lang">联系我们的投资团队</span>
+                </h2>
+                <div class="w-32 h-0.5 bg-yellow-400 mx-auto mb-8"></div>
+                <p class="text-xl opacity-90 en-content">
+                    Ready to learn more about this exclusive Pre-IPO opportunity?
+                </p>
+                <p class="text-xl opacity-90 cn-content hidden-lang">
+                    准备了解更多关于这个独家Pre-IPO机会？
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-800 bg-opacity-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl gold-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 en-content">Phone</h3>
+                    <h3 class="text-xl font-bold mb-2 cn-content hidden-lang">电话</h3>
+                    <p class="opacity-90">+1 (555) 123-4567</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-blue-800 bg-opacity-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl gold-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 en-content">Email</h3>
+                    <h3 class="text-xl font-bold mb-2 cn-content hidden-lang">邮箱</h3>
+                    <p class="opacity-90">investors@medline-preipo.com</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-blue-800 bg-opacity-50 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl gold-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 en-content">Office</h3>
+                    <h3 class="text-xl font-bold mb-2 cn-content hidden-lang">办公室</h3>
+                    <p class="opacity-90 en-content">Wall Street, New York</p>
+                    <p class="opacity-90 cn-content hidden-lang">纽约华尔街</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 max-w-2xl mx-auto">
+                    <h3 class="text-xl font-bold mb-4 en-content">Minimum Investment</h3>
+                    <h3 class="text-xl font-bold mb-4 cn-content hidden-lang">最低投资额</h3>
+                    <div class="text-3xl font-bold gold-accent mb-4">$5,000,000</div>
+                    <p class="opacity-90 en-content">Accredited investors only</p>
+                    <p class="opacity-90 cn-content hidden-lang">仅限合格投资者</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4 en-content">About This Opportunity</h4>
+                    <h4 class="text-lg font-bold mb-4 cn-content hidden-lang">关于此投资机会</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed en-content">
+                        This Pre-IPO investment opportunity represents a unique chance to invest in one of America's largest privately-held healthcare companies before its public offering.
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed cn-content hidden-lang">
+                        此Pre-IPO投资机会代表着在美国最大的私人医疗公司公开上市前进行投资的独特机会。
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 en-content">Important Links</h4>
+                    <h4 class="text-lg font-bold mb-4 cn-content hidden-lang">重要链接</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#risk" class="text-gray-400 hover:text-white transition-colors en-content">Risk Disclosure</a></li>
+                        <li><a href="#risk" class="text-gray-400 hover:text-white transition-colors cn-content hidden-lang">风险披露</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors en-content">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors cn-content hidden-lang">条款与条件</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors en-content">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors cn-content hidden-lang">隐私政策</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 en-content">Regulatory Notice</h4>
+                    <h4 class="text-lg font-bold mb-4 cn-content hidden-lang">监管提示</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed en-content">
+                        This offering has not been registered under the Securities Act and is exempt under Regulation D. Investments are speculative and involve substantial risk.
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed cn-content hidden-lang">
+                        此发行未根据证券法注册，在D条例下豁免。投资具有投机性并涉及重大风险。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    <span class="en-content">© 2024 Medline Industries Pre-IPO Investment Portal. All rights reserved.</span>
+                    <span class="cn-content hidden-lang">© 2024 Medline Industries Pre-IPO 投资门户。版权所有。</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Functionality
+        function toggleLanguage() {
+            const enElements = document.querySelectorAll('.en-content');
+            const cnElements = document.querySelectorAll('.cn-content');
+            const langButton = document.getElementById('lang-button');
+            
+            enElements.forEach(el => el.classList.toggle('hidden-lang'));
+            cnElements.forEach(el => el.classList.toggle('hidden-lang'));
+            
+            langButton.textContent = langButton.textContent === '中文' ? 'English' : '中文';
+        }
+
+        // Revenue Growth Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: 'Revenue (Billions USD)',
+                    data: [18.5, 20.1, 21.8, 22.9, 23.2, 24.1],
+                    borderColor: '#1e3a8a',
+                    backgroundColor: 'rgba(30, 58, 138, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 15
+                    }
+                }
+            }
+        });
+
+        // Margin Comparison Chart
+        const marginCtx = document.getElementById('marginChart').getContext('2d');
+        new Chart(marginCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Medline', 'McKesson', 'AmerisourceBergen', 'Cardinal Health'],
+                datasets: [{
+                    label: 'EBITDA Margin (%)',
+                    data: [5.8, 1.8, 1.6, 2.0],
+                    backgroundColor: ['#fbbf24', '#6b7280', '#6b7280', '#6b7280'],
+                    borderColor: ['#f59e0b', '#4b5563', '#4b5563', '#4b5563'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 7
+                    }
+                }
+            }
+        });
+
+        // Market Growth Chart
+        const marketCtx = document.getElementById('marketChart').getContext('2d');
+        new Chart(marketCtx, {
+            type: 'line',
+            data: {
+                labels: ['2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032'],
+                datasets: [{
+                    label: 'Market Size (Trillion USD)',
+                    data: [1.04, 1.11, 1.19, 1.28, 1.37, 1.47, 1.57, 1.68, 1.80, 2.20],
+                    borderColor: '#10b981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 1.0
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDnWPGvNcCYR1RYZfhbT7JWlHcGFw%2Bq1Lt%2FWmD1CyJ76aRHYWT5anTHDWCrvHLLyTOK91fRo%2BgVa0et5LyBYM3nPY%2FtcNkF7kCDEO2T%2B4k735d85MpFDNdXgAMxXAxQOhJjiozTsX1vBMgszWTZs9W1krXS5uf6fDD3L65R9C7SIGo5DIG0HcluBlx3u5SbS9J8gXblwzc8SMCwivVumzd1k39zY0lODbKFRUqiHUpMIeIUXTuPNZszS56ZJmR%2F6%2FgaBUjLUof4Kr3CqQwGB5gM1H%2BBsee1NqDwvGB1u8PJ8x4nzx5UTC958uxXz0NM0bIRi6nYZlQVZwopZc%2BuA2J7Gv%2BpZESApfAtYE2uUwh8EPGX4v061YJ2XLMQ%2BQ78X7pMQSwivwejFRzIVz6%2BwEbvei7wwSjlz6AJXNOffyOz%2BXqa1j9jkyrUtOg9JEGwoJ2MTK8bnmC%2FFFzSc%2B0iE2A7YQ%2FXI%2FGZZf%2FGpL3K8Whn5tVIEbZm7%2FBDZcmcrDf5gQKUVw8bQ8h1ONiYZuO8z2u%2FzswEtKg0IV7dguso1I93x8j%2B0%2FZr7v1zbi6aE5QgG%2Fchs2rLFjtYEbtvOCzsG5M6I%3D";
+        window.__genspark_locale = "zh-CN";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDnWPGvNcCYR1RYZfhbT7JWlHcGFw+q1Lt/WmD1CyJ76aRHYWT5anTHDWCrvHLLyTOK91fRo+gVa0et5LyBYM3nPY/tcNkF7kCDEO2T+4k735d85MpFDNdXgAMxXAxQOhJjiozTsX1vBMgszWTZs9W1krXS5uf6fDD3L65R9C7SIGo5DIG0HcluBlx3u5SbS9J8gXblwzc8SMCwivVumzd1k39zY0lODbKFRUqiHUpMIeIUXTuPNZszS56ZJmR/6/gaBUjLUof4Kr3CqQwGB5gM1H+Bsee1NqDwvGB1u8PJ8x4nzx5UTC958uxXz0NM0bIRi6nYZlQVZwopZc+uA2J7Gv+pZESApfAtYE2uUwh8EPGX4v061YJ2XLMQ+Q78X7pMQSwivwejFRzIVz6+wEbvei7wwSjlz6AJXNOffyOz+Xqa1j9jkyrUtOg9JEGwoJ2MTK8bnmC/FFzSc+0iE2A7YQ/XI/GZZf/GpL3K8Whn5tVIEbZm7/BDZcmcrDf5gQKUVw8bQ8h1ONiYZuO8z2u/zswEtKg0IV7dguso1I93x8j+0/Zr7v1zbi6aE5QgG/chs2rLFjtYEbtvOCzsG5M6I=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
